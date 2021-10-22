@@ -1,0 +1,43 @@
+* {
+  outline: 1px solid red;
+}
+
+:root {
+  --body-fondo: #1b335d;
+  --texto-contenido: #c2d6eb;
+  --color-link: #63d6e4;
+}
+
+html,
+body {
+  background: var(--body-fondo);
+}
+
+header {
+  background: #ce2f36;
+}
+
+header h1 {
+  color: var(--texto-contenido);
+}
+
+nav {
+  background: #297d8c;
+}
+
+nav li {
+  color: var(--color-link);
+}
+
+main {
+  background: #0e1722;
+  color: var(--texto-contenido);
+}
+
+main a {
+  color: var(--color-link);
+}
+
+footer {
+  color: var(--texto-contenido);
+}
