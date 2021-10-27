@@ -1,6 +1,6 @@
-* {
+/* * {
   outline: 1px solid red;
-}
+} */
 
 :root {
   --body-fondo: #1b335d;
@@ -13,8 +13,16 @@ body {
   background: var(--body-fondo);
 }
 
+header,
+nav,
+main,
+footer {
+  border-radius: 16px;
+}
+
 header {
   background: #ce2f36;
+  padding: 12px;
 }
 
 header h1 {
@@ -23,6 +31,11 @@ header h1 {
 
 nav {
   background: #297d8c;
+  display: inline-block;
+  width: 300px;
+  margin: 12px;
+  margin-right: 6px;
+  vertical-align: top;
 }
 
 nav li {
@@ -32,6 +45,10 @@ nav li {
 main {
   background: #0e1722;
   color: var(--texto-contenido);
+  display: inline-block;
+  width: 800px;
+  margin: 12px;
+  margin-left: 6px;
 }
 
 main a {
@@ -40,4 +57,6 @@ main a {
 
 footer {
   color: var(--texto-contenido);
+  background: #5d6573;
+  padding: 12px;
 }

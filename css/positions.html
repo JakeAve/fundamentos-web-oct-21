@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .padre {
+        padding: 8px;
+        background: darkblue;
+        margin-top: 220px;
+        position: relative;
+        height: 200px;
+      }
+      .caja {
+        width: 100px;
+        height: 100px;
+        background: crimson;
+        outline: 1px solid black;
+        display: inline-block;
+      }
+      .uno {
+        position: relative;
+        top: 5px;
+        left: 5px;
+      }
+      .dos {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+      .tres {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+      .cuatro {
+        position: sticky;
+        top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="padre">
+      <div class="hijo caja uno">uno</div>
+      <div class="hijo caja dos">dos</div>
+      <div class="hijo caja tres">tres</div>
+      <div class="hijo caja cuatro">cuatro</div>
+    </div>
+    <div style="height: 50px; background: white"></div>
+    <div class="padre"></div>
+    <div style="height: 50px; background: white"></div>
+    <div class="padre"></div>
+    <div style="height: 50px; background: white"></div>
+    <div class="padre"></div>
+    <div style="height: 50px; background: white"></div>
+    <div class="padre"></div>
+    <div style="height: 50px; background: white"></div>
+    <div class="padre"></div>
+    <div style="height: 50px; background: white"></div>
+    <div class="padre"></div>
+  </body>
+</html>
