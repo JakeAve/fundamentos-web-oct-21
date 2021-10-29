@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .sec {
+        margin: 16px;
+        padding: 16px;
+      }
+      .div1 {
+        background: grey;
+      }
+      .div2 {
+        background: darkgrey;
+      }
+      .div3 {
+        background: yellow;
+      }
+      .negrita {
+        font-weight: bold;
+      }
+
+      /* Movil */
+
+      .sm-0 {
+        display: none;
+      }
+
+      .sm-2 {
+        width: 50%;
+      }
+
+      .sm-4 {
+        width: 100%;
+      }
+
+      /* Tablet */
+      @media only screen and (min-width: 481px) and (max-width: 1023px) {
+        .md-0 {
+          display: none;
+        }
+
+        .md-4 {
+          display: block;
+          width: 100%;
+        }
+      }
+
+      /* Desktop */
+      @media only screen and (min-width: 1024px) {
+        .lg-0 {
+          display: none;
+        }
+
+        .lg-4 {
+          display: block;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sec div1">
+      <h1>@Media Queries</h1>
+    </div>
+    <div class="sec div2">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas eaque
+        sunt laudantium magnam dolores ipsum hic animi odit ullam corrupti fuga
+        velit pariatur adipisci, porro esse natus labore. Voluptatum, obcaecati?
+      </p>
+    </div>
+    <div class="sec div3">
+      <p class="sm-0 md-0 lg-4">
+        Desktop Width:
+        <span class="negrita">Greater than or equal to 1024px</span>
+      </p>
+      <p class="sm-0 md-4 lg-0">
+        Tablet Width: <span class="negrita">Entre 481px y 1023</span>
+      </p>
+      <p class="sm-4 md-0 lg-0">
+        Phone Width: <span class="negrita">Menos o igual a 480px</span>
+      </p>
+    </div>
+  </body>
+</html>
