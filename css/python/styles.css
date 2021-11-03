@@ -1,0 +1,126 @@
+:root {
+  --blue-1: #235076;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+body {
+  background: var(--blue-1);
+}
+
+.parte-arriba {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tamaño-txt {
+  color: black;
+  margin-left: 40%;
+  margin-bottom: 8px;
+}
+
+.tamaño-txt span {
+  color: white;
+}
+
+.tamaño-txt button {
+  border: none;
+  background: transparent;
+  color: #d3b300;
+  text-decoration: underline;
+}
+
+.search {
+  background: #444444;
+  border-radius: 16px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+  padding: 15px 30px;
+}
+
+.search input[type="text"] {
+  width: 200px;
+  height: 40px;
+  text-align: center;
+}
+
+.search input[type="submit"] {
+  padding: 10px;
+  background-color: var(--blue-1);
+  border-radius: 8px;
+  border-color: lightgrey;
+  color: white;
+  margin-left: 8px;
+}
+
+nav {
+  background: #427dad;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 8px;
+  width: 80%;
+  margin: 16px auto;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.pimera-sección {
+  display: flex;
+  justify-content: space-around;
+}
+
+.lista-aparte {
+  list-style-type: none;
+}
+
+.lista-aparte li {
+  margin: 8px 0;
+  text-align: center;
+}
+
+.lista-aparte li::before {
+  content: "»";
+  color: #d3b300;
+}
+
+.lista-aparte a {
+  color: white;
+  font-size: 1.1rem;
+}
+
+.zen {
+  width: 500px;
+}
+
+.zen p {
+  color: white;
+}
+
+p.amarillo {
+  color: #d3b300;
+  font-style: italic;
+  line-height: 2.2rem;
+}
+
+.zen h3 {
+  color: white;
+}
+
+.algo-zen {
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: 300;
+}
