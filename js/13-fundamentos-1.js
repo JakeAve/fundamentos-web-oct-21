@@ -31,3 +31,37 @@ function _3() {
 }
 
 console.log({ _3: _3() });
+
+function _4(ar) {
+  var cont = 0;
+  for (x = 0; x < ar.length; x++) {
+    cont = cont + ar[x];
+  }
+  return cont;
+}
+
+var array = [0, 11, 2, 3, 4, 5, 6, 7];
+
+console.log({ _4: _4(array) });
+
+function _5(arr) {
+  let max = arr[0];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+  }
+  return max;
+}
+
+console.log({ _5: _5([-3, 3, 5, 7]) });
+
+function _6(arr) {
+  let suma = 0;
+  for (let i = 0; i < arr.length; i++) {
+    suma = suma + arr[i];
+  }
+  return suma / arr.length;
+}
+
+console.log({ _6: _6([1, 3, 5, 7, 20]) });

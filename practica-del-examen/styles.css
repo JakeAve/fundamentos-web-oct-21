@@ -1,0 +1,142 @@
+body {
+  display: grid;
+  grid-template-columns: 25% auto;
+  grid-template-rows: auto 800px auto;
+  padding: 25px 100px;
+  background: #f0f0e8;
+}
+
+header {
+  grid-column: 1 / 3;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.git-logo,
+.busqueda {
+  display: flex;
+  align-items: center;
+}
+
+.busqueda {
+  position: relative;
+}
+
+.lupa {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.busqueda input {
+  padding: 2px 0;
+  padding-left: 25px;
+  border-radius: 25px;
+  box-shadow: inset 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+  border: 1px solid lightgrey;
+}
+
+nav {
+  padding: 0 16px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul ul {
+  padding-left: 20px;
+}
+
+nav li {
+  margin-bottom: 1rem;
+}
+
+nav li li {
+  margin-top: 0.7rem;
+  margin-bottom: 0;
+}
+
+nav ul a {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+nav ul ul a {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.seleccionado {
+  color: #f14f30;
+}
+
+.git-book {
+  padding: 32px;
+  margin-top: 64px;
+  background: #e9e8e0;
+}
+
+.git-book a,
+.older-releases a {
+  color: #178fb4;
+  text-decoration: none;
+}
+
+main {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.download-sec {
+  display: flex;
+}
+
+.downloads {
+  /* width: 25%; */
+}
+
+.downloads h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.descargar {
+  padding: 24px;
+  border-radius: 4px;
+  background: #e9e8e0;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+  justify-content: start;
+}
+
+.descargar img {
+  width: 20px;
+  margin-right: 15px;
+}
+
+.descargar a {
+  display: flex;
+  align-items: center;
+  color: #178fb4;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.monitor {
+  width: 300px;
+  margin-left: 50px;
+}
+
+footer {
+  grid-column: 1 / 3;
+}
