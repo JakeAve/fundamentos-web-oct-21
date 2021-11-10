@@ -65,3 +65,21 @@ function _6(arr) {
 }
 
 console.log({ _6: _6([1, 3, 5, 7, 20]) });
+
+function _9(arr) {
+  const resultado = [];
+  for (let i = 0; i < arr.length; i++) {
+    // const val = Math.pow(arr[i], 2);
+    const val = arr[i] * arr[i];
+    resultado.push(val);
+  }
+  return resultado;
+}
+
+console.log({
+  _9: _9([123, 735, 701]),
+});
+
+// function randNumbers(){const arr=[];for(let i=0;i<200;i++) arr.push(Math.floor(Math.random() * 1000));return JSON.stringify(arr);}
+
+// console.log(randNumbers());
